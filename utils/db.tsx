@@ -13,20 +13,16 @@ export const connectdb = async () => {
         console.log("db is connected...");
         console.log(connection);
 
-
-        //create a user in database...
+        //create a user in database.....
         const uusers = new Users({
             username: "abhay",
             email: "abhay@gamil.com",
             password: "abhay72023"
+         
         })
-     
-
+    
         await uusers.save();
      
-      console.log("user is created.....👌")
-
-
     } catch (error) {
         console.log("db id not conneted...");
         console.log(error);
