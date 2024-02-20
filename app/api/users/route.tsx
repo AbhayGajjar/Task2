@@ -1,6 +1,9 @@
 //GET request for Users
 
+import { connectdb } from "@/utils/db";
 import { NextResponse } from "next/server";
+
+connectdb();
 
 export async function GET(){
     const users = [
@@ -25,4 +28,12 @@ export async function GET(){
     ]
 
     return NextResponse.json(users);
+}
+
+//DELETE FOR USERS
+
+export async function DELETE(){
+    return NextResponse.json({
+        message:"this is for testing..."
+    })
 }
