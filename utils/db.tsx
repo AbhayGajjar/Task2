@@ -20,14 +20,10 @@ export const connectdb = async () => {
             email: "abhay@gamil.com",
             password: "abhay72023"
         })
-        const uusers2 = new Users({
-            username: "aryan",
-            email: "abhay@gamil.com",
-            password: "abhay72023"
-        })
+     
 
         await uusers.save();
-        await uusers2.save();
+     
       console.log("user is created.....👌")
 
 
